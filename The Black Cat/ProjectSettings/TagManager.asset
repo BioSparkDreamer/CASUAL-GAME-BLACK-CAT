@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - HeartsEmpty
+  - HeartsFull
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Ground
+  - No Collisions
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Background
+    uniqueID: 4070845457
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Spikes and Pickups
+    uniqueID: 2356272265
+    locked: 0
+  - name: Ground Tilemap
+    uniqueID: 4013834421
+    locked: 0
+  - name: Player
+    uniqueID: 2712465525
+    locked: 0
+  - name: Before Player
+    uniqueID: 1335620363
+    locked: 0
