@@ -10,10 +10,9 @@ public class MainMenu : MonoBehaviour
     [Header("Starting Game")]
     public string sceneToLoad;
 
+    [Header("Menu Object Variables")]
     public GameObject[] buttons;
-
     public CanvasGroup optionsMenu, creditsMenu, controlsMenu, mainMenu;
-
     public GameObject startMenu;
 
     void Start()

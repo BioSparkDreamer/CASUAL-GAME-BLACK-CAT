@@ -5,7 +5,8 @@ using UnityEngine;
 public class Pickups : MonoBehaviour
 {
     [Header("Health Related Variables")]
-    public bool isHealth, isFullHealth;
+    public bool isHealth;
+    public bool isFullHealth;
     public int healthToAdd, healthToFullyRestore;
 
     void Start()

@@ -6,9 +6,10 @@ public class AudioManager : MonoBehaviour
 {
     public static AudioManager instance;
 
+    [Header("Audio Source Variables")]
+    public AudioSource[] sfx;
     public AudioSource levelMusic, menuMusic;
     public bool isLevel, isMenu;
-    public AudioSource[] sfx;
 
     void Awake()
     {
@@ -49,7 +50,7 @@ public class AudioManager : MonoBehaviour
         menuMusic.Play();
     }
 
-    public void ResumeMusic()
+    public void ResumeLevelMusic()
     {
         levelMusic.Play();
         menuMusic.Stop();

@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 
 public class TextColor : MonoBehaviour
 {
+    [Header("Text Variables")]
     public TMP_Text text;
 
     public void Onselect()

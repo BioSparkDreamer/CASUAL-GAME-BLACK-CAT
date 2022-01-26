@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CheckPoint : MonoBehaviour
 {
+    [Header("CheckPoint Variables")]
     public SpriteRenderer theSR;
     public Sprite cpHit, cpNotHit;
 

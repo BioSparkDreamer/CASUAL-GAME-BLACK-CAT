@@ -23,15 +23,15 @@ public class PlayerController : MonoBehaviour
 
     [Header("KnockBack Variables")]
     public float knockBackLength;
-    public float knockBackForce;
+    [HideInInspector] public float knockBackForceX, knockBackForceY;
     private float knockBackCounter;
 
     [Header("Stamina and Sprint Variables")]
     public bool isSprinting;
     public int maxStamina = 100;
-    public float currentStamina;
     private Coroutine regenStamina;
-    public float startSpeed, sprintSpeed, refillSpeed, staminaCost;
+    public float currentStamina, sprintSpeed, refillSpeed, staminaCost;
+    private float startSpeed;
 
     [Header("Wall Jump Variables")]
     public float wallJumpTime = 0.2f;
@@ -99,10 +99,10 @@ public class PlayerController : MonoBehaviour
             {
                 knockBackCounter -= Time.deltaTime;
                 if (facingRight)
-                    theRB.velocity = new Vector2(-knockBackForce, theRB.velocity.y);
+                    theRB.velocity = new Vector2(-knockBackForceX, knockBackForceY);
 
                 else if (!facingRight)
-                    theRB.velocity = new Vector2(knockBackForce, theRB.velocity.y);
+                    theRB.velocity = new Vector2(knockBackForceX, knockBackForceY);
             }
 
             Animations();
@@ -206,10 +206,13 @@ public class PlayerController : MonoBehaviour
         anim.SetBool("isGrounded", isGrounded);
     }
 
-    public void KnockBack()
+    public void KnockBack(int objectKnockBackX, int objectKnockBackY)
     {
+        knockBackForceX = objectKnockBackX;
+        knockBackForceY = objectKnockBackY;
+
         knockBackCounter = knockBackLength;
-        theRB.velocity = new Vector2(0f, knockBackForce);
+        theRB.velocity = Vector2.zero;
     }
 
     void OnDrawGizmosSelected()

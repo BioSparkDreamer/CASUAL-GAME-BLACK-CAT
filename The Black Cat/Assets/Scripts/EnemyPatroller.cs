@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class EnemyPatroller : MonoBehaviour
 {
+    [Header("Object Variables")]
+    public Rigidbody2D theRB;
+
     [Header("Enemy Movement Variables")]
     public float moveSpeed;
     public Transform leftPoint, rightPoint;
     public bool movingRight;
-
-    [Header("Object Variables")]
-    public Rigidbody2D theRB;
 
     void Start()
     {
