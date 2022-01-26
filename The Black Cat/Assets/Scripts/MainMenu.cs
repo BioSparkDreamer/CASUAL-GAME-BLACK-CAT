@@ -83,4 +83,9 @@ public class MainMenu : MonoBehaviour
         controlsMenu.alpha = 0;
         controlsMenu.blocksRaycasts = false;
     }
+
+    public void PlayButtonSound()
+    {
+        AudioManager.instance.PlaySFXAdjusted(0);
+    }
 }

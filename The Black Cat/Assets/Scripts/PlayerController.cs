@@ -33,6 +33,14 @@ public class PlayerController : MonoBehaviour
     private Coroutine regenStamina;
     public float startSpeed, sprintSpeed, refillSpeed, staminaCost;
 
+    [Header("Wall Jump Variables")]
+    public float wallJumpTime = 0.2f;
+    public float wallJumpSpeed = 0.3f;
+    public float wallDistance = 0.5f;
+    private bool isWallSliding = false;
+    private float jumpTime;
+    private RaycastHit2D wallCheckHit;
+
     void Awake()
     {
         if (instance == null)
@@ -64,10 +72,13 @@ public class PlayerController : MonoBehaviour
                 GroundCheck();
 
                 //Input for player to jump
-                if (Input.GetButtonDown("Jump") && isGrounded)
+                if (Input.GetButtonDown("Jump") && isGrounded || isWallSliding && Input.GetButtonDown("Jump"))
                 {
                     Jump();
                 }
+
+                //WallJump 
+                WallJump();
 
                 //Input for player to sprint
                 if (Input.GetButton("Sprint") && theRB.velocity.x != 0 && currentStamina > staminaCost)
@@ -109,6 +120,11 @@ public class PlayerController : MonoBehaviour
             {
                 UseStamina();
             }
+
+            if (isWallSliding)
+            {
+                theRB.velocity = new Vector2(theRB.velocity.x, Mathf.Clamp(theRB.velocity.y, wallJumpSpeed, float.MaxValue));
+            }
         }
     }
 
@@ -123,17 +139,32 @@ public class PlayerController : MonoBehaviour
         {
             transform.localScale = new Vector3(-1, 1, 1);
             facingRight = false;
+            wallCheckHit = Physics2D.Raycast(transform.position, new Vector2(-wallDistance, 0), wallDistance, groundLayer);
         }
         else if (theRB.velocity.x > 0)
         {
             transform.localScale = Vector3.one;
             facingRight = true;
+            wallCheckHit = Physics2D.Raycast(transform.position, new Vector2(wallDistance, 0), wallDistance, groundLayer);
         }
     }
 
     void Jump()
     {
         theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
+    }
+
+    void WallJump()
+    {
+        if (wallCheckHit && !isGrounded && movX != 0)
+        {
+            isWallSliding = true;
+            jumpTime = Time.time + wallJumpTime;
+        }
+        else if (jumpTime < Time.time)
+        {
+            isWallSliding = false;
+        }
     }
 
     void UseStamina()
@@ -161,6 +192,11 @@ public class PlayerController : MonoBehaviour
             currentStamina += maxStamina / 100;
             UIController.instance.UpdateStaminaUI();
             yield return new WaitForSeconds(refillSpeed);
+
+            if (currentStamina >= maxStamina)
+            {
+                currentStamina = maxStamina;
+            }
         }
     }
 

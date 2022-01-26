@@ -61,6 +61,7 @@ public class UIController : MonoBehaviour
     {
         isDead = true;
         PlayerHealthController.instance.theSR.enabled = false;
+        AudioManager.instance.StopLevelMusic();
         StartCoroutine(ShowGameOverScreenCO());
 
     }
