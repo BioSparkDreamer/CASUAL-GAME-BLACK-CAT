@@ -37,11 +37,12 @@ public class PauseMenu : MonoBehaviour
     public void ResumeandUnPause()
     {
         //Do if Player is Pausing the Game
-        if (!pauseMenu.activeInHierarchy && !isPaused)
+        if (!pauseMenu.activeInHierarchy && !isPaused && !UIController.instance.isDead)
         {
             pauseMenu.SetActive(true);
             isPaused = true;
             Time.timeScale = 0;
+            AudioManager.instance.StopLevelMusic();
 
             //Make EventSystem select resume button when pausing game
             EventSystem.current.SetSelectedGameObject(null);
@@ -54,6 +55,7 @@ public class PauseMenu : MonoBehaviour
             pauseMenu.SetActive(false);
             isPaused = false;
             Time.timeScale = 1;
+            AudioManager.instance.ResumeLevelMusic();
         }
     }
 
@@ -75,5 +77,10 @@ public class PauseMenu : MonoBehaviour
         {
             Time.timeScale = 1;
         }
+    }
+
+    public void PlayButtonSound()
+    {
+        AudioManager.instance.PlaySFXAdjusted(0);
     }
 }

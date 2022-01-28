@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class EnemyPatroller : MonoBehaviour
 {
+    [Header("Object Variables")]
+    public Rigidbody2D theRB;
+
     [Header("Enemy Movement Variables")]
     public float moveSpeed;
     public Transform leftPoint, rightPoint;
     public bool movingRight;
-
-    [Header("Object Variables")]
-    public SpriteRenderer theSR;
-    public Rigidbody2D theRB;
 
     void Start()
     {
@@ -26,7 +25,7 @@ public class EnemyPatroller : MonoBehaviour
     {
         if (movingRight)
         {
-            theSR.flipX = true;
+            transform.localScale = Vector3.one;
             if (transform.position.x > rightPoint.position.x)
             {
                 movingRight = false;
@@ -34,7 +33,7 @@ public class EnemyPatroller : MonoBehaviour
         }
         else
         {
-            theSR.flipX = false;
+            transform.localScale = new Vector3(-1f, 1f, 1f);
             if (transform.position.x < leftPoint.position.x)
             {
                 movingRight = true;

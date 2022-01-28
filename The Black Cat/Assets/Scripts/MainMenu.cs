@@ -10,10 +10,9 @@ public class MainMenu : MonoBehaviour
     [Header("Starting Game")]
     public string sceneToLoad;
 
+    [Header("Menu Object Variables")]
     public GameObject[] buttons;
-
     public CanvasGroup optionsMenu, creditsMenu, controlsMenu, mainMenu;
-
     public GameObject startMenu;
 
     void Start()
@@ -82,5 +81,10 @@ public class MainMenu : MonoBehaviour
     {
         controlsMenu.alpha = 0;
         controlsMenu.blocksRaycasts = false;
+    }
+
+    public void PlayButtonSound()
+    {
+        AudioManager.instance.PlaySFXAdjusted(0);
     }
 }
