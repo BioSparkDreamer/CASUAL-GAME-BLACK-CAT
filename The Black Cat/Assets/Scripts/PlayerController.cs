@@ -81,7 +81,7 @@ public class PlayerController : MonoBehaviour
                 WallJump();
 
                 //Input for player to sprint
-                if (Input.GetButton("Sprint") && theRB.velocity.x != 0 && currentStamina > staminaCost)
+                if ((Input.GetButton("Sprint") || Input.GetAxis("Sprint") > 0.05f) && movX != 0 && currentStamina > staminaCost)
                 {
                     isSprinting = true;
                     moveSpeed = sprintSpeed;
@@ -187,16 +187,17 @@ public class PlayerController : MonoBehaviour
     {
         yield return new WaitForSeconds(1f);
 
+
+
         while (currentStamina < maxStamina)
         {
             currentStamina += maxStamina / 100;
-            UIController.instance.UpdateStaminaUI();
-            yield return new WaitForSeconds(refillSpeed);
-
             if (currentStamina >= maxStamina)
             {
                 currentStamina = maxStamina;
             }
+            UIController.instance.UpdateStaminaUI();
+            yield return new WaitForSeconds(refillSpeed);
         }
     }
 
