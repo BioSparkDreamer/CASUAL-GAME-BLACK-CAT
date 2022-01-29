@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     [Header("Object Variables")]
     public Rigidbody2D theRB;
     public Animator anim;
+    SpriteRenderer theSR;
 
     [Header("Movement Variables")]
     public float moveSpeed;
@@ -41,6 +42,10 @@ public class PlayerController : MonoBehaviour
     private float jumpTime;
     private RaycastHit2D wallCheckHit;
 
+    [Header("Whip Attack Variables")]
+    public float timeBetweenWhips;
+    private float whipCounter;
+
     void Awake()
     {
         if (instance == null)
@@ -55,6 +60,7 @@ public class PlayerController : MonoBehaviour
     {
         theRB = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        theSR = GetComponent<SpriteRenderer>();
 
         startSpeed = moveSpeed;
     }
@@ -70,6 +76,15 @@ public class PlayerController : MonoBehaviour
 
                 //Function for Checking if Player is Grounded
                 GroundCheck();
+
+                //Whip Attack
+                if (Input.GetButtonDown("Attack") && !isWallSliding && whipCounter <= 0)
+                {
+                    anim.SetTrigger("Attack");
+                    whipCounter = timeBetweenWhips;
+                }
+
+                WhipCooldown();
 
                 //Input for player to jump
                 if (Input.GetButtonDown("Jump") && isGrounded || isWallSliding && Input.GetButtonDown("Jump"))
@@ -154,16 +169,26 @@ public class PlayerController : MonoBehaviour
         theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
     }
 
+    void WhipCooldown()
+    {
+        if (whipCounter > 0)
+        {
+            whipCounter -= Time.deltaTime;
+        }
+    }
+
     void WallJump()
     {
         if (wallCheckHit && !isGrounded && movX != 0)
         {
             isWallSliding = true;
             jumpTime = Time.time + wallJumpTime;
+            theSR.flipX = true;
         }
         else if (jumpTime < Time.time)
         {
             isWallSliding = false;
+            theSR.flipX = false;
         }
     }
 
@@ -205,6 +230,7 @@ public class PlayerController : MonoBehaviour
     {
         anim.SetFloat("moveSpeed", Mathf.Abs(theRB.velocity.x));
         anim.SetBool("isGrounded", isGrounded);
+        anim.SetBool("wallGrabbing", isWallSliding);
     }
 
     public void KnockBack(int objectKnockBackX, int objectKnockBackY)

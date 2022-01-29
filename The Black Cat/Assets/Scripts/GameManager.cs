@@ -10,6 +10,10 @@ public class GameManager : MonoBehaviour
     private CheckPoint[] checkPoints;
     public Vector3 spawnPoint;
 
+    [Header("Soul Collecing System Variables")]
+    public int maxSouls = 100;
+    public int currentSouls;
+
     void Awake()
     {
         if (instance == null)
@@ -40,6 +44,18 @@ public class GameManager : MonoBehaviour
         {
             checkPoints[i].ResetCheckPoint();
         }
+    }
+
+    public void UpdateSoulsCount(int soulsToAdd)
+    {
+        currentSouls += soulsToAdd;
+
+        if (currentSouls >= maxSouls)
+        {
+            currentSouls = maxSouls;
+        }
+
+        UIController.instance.UpdateSoulUI();
     }
 
     public void Respawn()

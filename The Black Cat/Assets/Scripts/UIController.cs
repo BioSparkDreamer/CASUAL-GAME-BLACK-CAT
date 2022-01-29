@@ -22,6 +22,10 @@ public class UIController : MonoBehaviour
     public bool isDead;
     public GameObject restartButton;
 
+    [Header("Soul Collect Variables")]
+    public Slider soulSlider;
+    public TMP_Text soulText;
+
 
     void Awake()
     {
@@ -32,6 +36,7 @@ public class UIController : MonoBehaviour
     {
         UpdateHealthUI();
         UpdateStaminaUI();
+        UpdateSoulUI();
     }
 
     void Update()
@@ -55,6 +60,14 @@ public class UIController : MonoBehaviour
 
         staminaText.text = "Stamina: " + PlayerController.instance.currentStamina.ToString("F0");
 
+    }
+
+    public void UpdateSoulUI()
+    {
+        soulSlider.maxValue = GameManager.instance.maxSouls;
+        soulSlider.value = GameManager.instance.currentSouls;
+
+        soulText.text = "Souls: " + GameManager.instance.currentSouls.ToString() + "/" + GameManager.instance.maxSouls.ToString();
     }
 
     public void GameOverScreen()

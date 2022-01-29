@@ -1,7 +1,310 @@
 fileFormatVersion: 2
 guid: d81e6a6d9d9f1274fb19a712700dafc0
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -7956655330049976835
+    second: Whip_0
+  - first:
+      213: 8540062214991249977
+    second: Whip_1
+  - first:
+      213: 5765087011866300799
+    second: Whip_2
+  - first:
+      213: 3170501647615189412
+    second: Whip_3
+  - first:
+      213: 7794059649394139813
+    second: Whip_4
+  - first:
+      213: -6184990896390520432
+    second: Whip_5
+  - first:
+      213: -6786606270268960664
+    second: Whip_6
+  - first:
+      213: 2963921020113066922
+    second: Whip_7
+  - first:
+      213: -1774029018430594108
+    second: Whip_8
+  - first:
+      213: 3700500947027033991
+    second: Whip_9
+  - first:
+      213: -4131906594206722438
+    second: Whip_10
+  - first:
+      213: -1891288241385229403
+    second: Whip_11
+  - first:
+      213: 6683232256715932329
+    second: Whip_12
+  - first:
+      213: 5768425963155767937
+    second: Whip_13
+  - first:
+      213: 8220405794501218063
+    second: Whip_14
+  - first:
+      213: -8517864604556814614
+    second: Whip_15
+  - first:
+      213: 6627259392393941887
+    second: Whip_16
+  - first:
+      213: -4215467779377884219
+    second: Whip_17
+  - first:
+      213: 7261091764223511137
+    second: Whip_18
+  - first:
+      213: -8968831673672872901
+    second: Whip_19
+  - first:
+      213: -8313948125040895070
+    second: Whip_20
+  - first:
+      213: 5282147014900268140
+    second: Whip_21
+  - first:
+      213: -4044248288204540082
+    second: Whip_22
+  - first:
+      213: -406590636943829423
+    second: Whip_23
+  - first:
+      213: -5395845415380797476
+    second: Whip_24
+  - first:
+      213: -1707497080170334664
+    second: Whip_25
+  - first:
+      213: -3361708474224628863
+    second: Whip_26
+  - first:
+      213: 7940204597455051677
+    second: Whip_27
+  - first:
+      213: -4425150913662186595
+    second: Whip_28
+  - first:
+      213: -4296358506465137531
+    second: Whip_29
+  - first:
+      213: -6667378569596871188
+    second: Whip_30
+  - first:
+      213: -7861161668681885499
+    second: Whip_31
+  - first:
+      213: 7223372098512642289
+    second: Whip_32
+  - first:
+      213: -2312155776129466966
+    second: Whip_33
+  - first:
+      213: -4649233757066124527
+    second: Whip_34
+  - first:
+      213: 2125504656111756402
+    second: Whip_35
+  - first:
+      213: 7092573235197438880
+    second: Whip_36
+  - first:
+      213: -7436833794975454468
+    second: Whip_37
+  - first:
+      213: 6094487697854452405
+    second: Whip_38
+  - first:
+      213: -5218629598907020915
+    second: Whip_39
+  - first:
+      213: 8016097421248887704
+    second: Whip_40
+  - first:
+      213: -8627890016541417429
+    second: Whip_41
+  - first:
+      213: 309891940112595475
+    second: Whip_42
+  - first:
+      213: 8426206236096770358
+    second: Whip_43
+  - first:
+      213: 7124687598933093861
+    second: Whip_44
+  - first:
+      213: -4685366367044307360
+    second: Whip_45
+  - first:
+      213: 7667457041790572868
+    second: Whip_46
+  - first:
+      213: 5935714550792020572
+    second: Whip_47
+  - first:
+      213: 1089531622420612792
+    second: Whip_48
+  - first:
+      213: -2276926027663697242
+    second: Whip_49
+  - first:
+      213: 7255262322900257249
+    second: Whip_50
+  - first:
+      213: 7288324432725486857
+    second: Whip_51
+  - first:
+      213: -8199637321731390009
+    second: Whip_52
+  - first:
+      213: 1773776581357049705
+    second: Whip_53
+  - first:
+      213: -3891826950307796698
+    second: Whip_54
+  - first:
+      213: -2166602510389334123
+    second: Whip_55
+  - first:
+      213: 3271577126677435700
+    second: Whip_56
+  - first:
+      213: 3158965290702795763
+    second: Whip_57
+  - first:
+      213: -7412244846304876501
+    second: Whip_58
+  - first:
+      213: -748868896584164711
+    second: Whip_59
+  - first:
+      213: -4951531969151730318
+    second: Whip_60
+  - first:
+      213: -7792041214937845977
+    second: Whip_61
+  - first:
+      213: 1655213279013956980
+    second: Whip_62
+  - first:
+      213: 2616108298990143771
+    second: Whip_63
+  - first:
+      213: -1612997459789959268
+    second: Whip_64
+  - first:
+      213: 316051290346466793
+    second: Whip_65
+  - first:
+      213: -1832313346473118324
+    second: Whip_66
+  - first:
+      213: 6067597389086967460
+    second: Whip_67
+  - first:
+      213: 5635453381226704702
+    second: Whip_68
+  - first:
+      213: -4389857154235215025
+    second: Whip_69
+  - first:
+      213: -3565999533023797162
+    second: Whip_70
+  - first:
+      213: -6882675207991806955
+    second: Whip_71
+  - first:
+      213: 4081078644816802859
+    second: Whip_72
+  - first:
+      213: -3701406312748294810
+    second: Whip_73
+  - first:
+      213: 4939732621146585760
+    second: Whip_74
+  - first:
+      213: -5290239581682975597
+    second: Whip_75
+  - first:
+      213: 1167256003164028609
+    second: Whip_76
+  - first:
+      213: -7126417792448574786
+    second: Whip_77
+  - first:
+      213: 2953134672087629995
+    second: Whip_78
+  - first:
+      213: -3119487535985612280
+    second: Whip_79
+  - first:
+      213: -22777538380856578
+    second: Whip_80
+  - first:
+      213: -2820980541182818344
+    second: Whip_81
+  - first:
+      213: 6218946016220342721
+    second: Whip_82
+  - first:
+      213: -3718604430000562339
+    second: Whip_83
+  - first:
+      213: -103843845198702107
+    second: Whip_84
+  - first:
+      213: 903511256534329044
+    second: Whip_85
+  - first:
+      213: 8762194418783261199
+    second: Whip_86
+  - first:
+      213: 2965998601152246073
+    second: Whip_87
+  - first:
+      213: -7822051030770683536
+    second: Whip_88
+  - first:
+      213: 6660465818325158409
+    second: Whip_89
+  - first:
+      213: 1153344816000685858
+    second: Whip_90
+  - first:
+      213: 5062077998368518365
+    second: Whip_91
+  - first:
+      213: 3579407826382012893
+    second: Whip_92
+  - first:
+      213: 3715164775882633035
+    second: Whip_93
+  - first:
+      213: -4607237829445415987
+    second: Whip_94
+  - first:
+      213: 3497751199947944904
+    second: Whip_95
+  - first:
+      213: 3835900448626257054
+    second: Whip_96
+  - first:
+      213: 4453612965970190195
+    second: Whip_97
+  - first:
+      213: 2886289707411643886
+    second: Whip_98
+  - first:
+      213: 4660495108374546512
+    second: Whip_99
+  - first:
+      213: 8508039743807501404
+    second: Whip_100
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -32,7 +335,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -41,7 +344,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -68,7 +371,43 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -77,7 +416,175 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Whip_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 734
+        width: 108
+        height: 211
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df5172c2228449190800000000000000
+      internalID: -7956655330049976835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Whip_1
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 734
+        width: 115
+        height: 211
+      alignment: 9
+      pivot: {x: 0.55, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9320a4c5655648670800000000000000
+      internalID: 8540062214991249977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Whip_2
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 734
+        width: 130
+        height: 211
+      alignment: 9
+      pivot: {x: 0.6, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f715281b714b10050800000000000000
+      internalID: 5765087011866300799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Whip_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 395
+        width: 130
+        height: 212
+      alignment: 9
+      pivot: {x: 0.6, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a1e4e15372effb20800000000000000
+      internalID: 3170501647615189412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Whip_4
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 398
+        width: 130
+        height: 212
+      alignment: 9
+      pivot: {x: 0.55, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a2e758d4ff0a2c60800000000000000
+      internalID: 7794059649394139813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Whip_5
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 399
+        width: 130
+        height: 212
+      alignment: 9
+      pivot: {x: 0.58, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0914e999c8f7a2aa0800000000000000
+      internalID: -6184990896390520432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Whip_6
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 64
+        width: 275
+        height: 211
+      alignment: 9
+      pivot: {x: 0.2, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8601e2edd8121d1a0800000000000000
+      internalID: -6786606270268960664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Whip_7
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 63
+        width: 315
+        height: 211
+      alignment: 9
+      pivot: {x: 0.18, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aab172ad676f12920800000000000000
+      internalID: 2963921020113066922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

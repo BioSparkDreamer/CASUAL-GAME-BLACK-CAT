@@ -21,6 +21,11 @@ public class SettingsController : MonoBehaviour
     public Toggle syncToggle;
     [HideInInspector] public int syncInt;
 
+    [Header("Audio Variables")]
+    public AudioMixer theMixer;
+    public Slider masterSlider, musicSlider, sfxSlider;
+    public TMP_Text masterText, musicText, sfxText;
+
     void Start()
     {
         //FullScreen Toggle Save
@@ -59,6 +64,31 @@ public class SettingsController : MonoBehaviour
             syncToggle.isOn = true;
             QualitySettings.vSyncCount = 1;
         }
+
+        //Master Volume Slider
+        if (PlayerPrefs.HasKey("MasterVolume"))
+        {
+            theMixer.SetFloat("masterVolume", PlayerPrefs.GetFloat("MasterVolume"));
+            masterSlider.value = PlayerPrefs.GetFloat("MasterVolume");
+        }
+
+        //Music Volume Slider
+        if (PlayerPrefs.HasKey("MusicVolume"))
+        {
+            theMixer.SetFloat("musicVolume", PlayerPrefs.GetFloat("MusicVolume"));
+            musicSlider.value = PlayerPrefs.GetFloat("MusicVolume");
+        }
+
+        //SFX Volume Slider
+        if (PlayerPrefs.HasKey("SfxVolume"))
+        {
+            theMixer.SetFloat("sfxVolume", PlayerPrefs.GetFloat("SfxVolume"));
+            sfxSlider.value = PlayerPrefs.GetFloat("SfxVolume");
+        }
+
+        masterText.text = (masterSlider.value + 80).ToString();
+        musicText.text = (musicSlider.value + 80).ToString();
+        sfxText.text = (sfxSlider.value + 80).ToString();
     }
 
     void Update()
@@ -113,5 +143,26 @@ public class SettingsController : MonoBehaviour
             QualitySettings.vSyncCount = 1;
             Debug.Log("Vsync is On");
         }
+    }
+
+    public void MasterVolume()
+    {
+        masterText.text = (masterSlider.value + 80).ToString("F0");
+        theMixer.SetFloat("masterVolume", masterSlider.value);
+        PlayerPrefs.SetFloat("MasterVolume", masterSlider.value);
+    }
+
+    public void MusicVolume()
+    {
+        musicText.text = (musicSlider.value + 80).ToString("F0");
+        theMixer.SetFloat("musicVolume", musicSlider.value);
+        PlayerPrefs.SetFloat("sfxVolume", musicSlider.value);
+    }
+
+    public void SfxVolume()
+    {
+        sfxText.text = (sfxSlider.value + 80).ToString("F0");
+        theMixer.SetFloat("sfxVolume", sfxSlider.value);
+        PlayerPrefs.SetFloat("SfxVolume", sfxSlider.value);
     }
 }

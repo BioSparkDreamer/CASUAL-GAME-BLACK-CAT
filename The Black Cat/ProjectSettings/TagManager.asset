@@ -6,6 +6,7 @@ TagManager:
   tags:
   - HeartsEmpty
   - HeartsFull
+  - Enemy
   layers:
   - Default
   - TransparentFX
