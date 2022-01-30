@@ -76,12 +76,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 783818fc36ae6b646b54cd2ffe4f8f74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelMusic: {fileID: 685766912531401327}
-  menuMusic: {fileID: 685766914054562525}
-  isLevel: 0
-  isMenu: 1
   sfx:
   - {fileID: 685766912581177828}
+  levelMusic: {fileID: 685766912531401327}
+  menuMusic: {fileID: 685766914054562525}
+  isLevel: 1
+  isMenu: 0
 --- !u!1 &685766912531401321
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,14 +4,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
 
-public class WinScreen : MonoBehaviour
+public class GameOverMenu : MonoBehaviour
 {
-    [Header("Starting Game")]
-    public string mainMenu;
-
-    [Header("Menu Object Variables")]
+    [Header("Pause Menu Variables")]
     public GameObject[] buttons;
-    public CanvasGroup optionsMenu, creditsMenu, controlsMenu;
+    public CanvasGroup creditsMenu, controlsMenu;
 
     void Start()
     {
@@ -23,32 +20,10 @@ public class WinScreen : MonoBehaviour
 
     }
 
-    public void LoadMenu()
-    {
-        SceneManager.LoadScene(mainMenu);
-    }
-
-    public void QuitGame()
-    {
-        Application.Quit();
-        Debug.Log("Quit Game");
-    }
-
     public void ChangeActiveButtons(int buttonToChose)
     {
         EventSystem.current.SetSelectedGameObject(null);
         EventSystem.current.SetSelectedGameObject(buttons[buttonToChose]);
-    }
-    public void OpenOptions()
-    {
-        optionsMenu.alpha = 1;
-        optionsMenu.blocksRaycasts = true;
-    }
-
-    public void CloseOptions()
-    {
-        optionsMenu.alpha = 0;
-        optionsMenu.blocksRaycasts = false;
     }
 
     public void OpenCredits()
@@ -73,10 +48,5 @@ public class WinScreen : MonoBehaviour
     {
         controlsMenu.alpha = 0;
         controlsMenu.blocksRaycasts = false;
-    }
-
-    public void PlayButtonSound()
-    {
-        AudioManager.instance.PlaySFXAdjusted(0);
     }
 }

@@ -6,6 +6,7 @@ public class EnemyHealthController : MonoBehaviour
 {
     public int health, soulsToAdd;
     public GameObject enemyObject;
+    public GameObject deathEffect;
 
     void Start()
     {
@@ -24,8 +25,12 @@ public class EnemyHealthController : MonoBehaviour
         if (health <= 0)
         {
             health = 0;
-            enemyObject.SetActive(false);
+            Destroy(enemyObject);
             GameManager.instance.UpdateSoulsCount(soulsToAdd);
+            if (deathEffect != null)
+            {
+                Instantiate(deathEffect, transform.position, transform.rotation);
+            }
         }
     }
 }

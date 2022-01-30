@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,8 +12,11 @@ public class GameManager : MonoBehaviour
     public Vector3 spawnPoint;
 
     [Header("Soul Collecing System Variables")]
-    public int maxSouls = 100;
+    public int maxSouls = 50;
     public int currentSouls;
+
+    [Header("Loading Next Level")]
+    public string nextLevel;
 
     void Awake()
     {
@@ -62,5 +66,10 @@ public class GameManager : MonoBehaviour
     {
         PlayerHealthController.instance.TakeDamage(1);
         PlayerController.instance.transform.position = spawnPoint;
+    }
+
+    public void LoadNextLevel()
+    {
+        SceneManager.LoadScene(nextLevel);
     }
 }

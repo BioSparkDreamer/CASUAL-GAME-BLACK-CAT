@@ -3152,6 +3152,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 685766912078421193, guid: 8896360afccaf7441a39cf7c2b778d5d, type: 3}
+      propertyPath: isMenu
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 685766912078421193, guid: 8896360afccaf7441a39cf7c2b778d5d, type: 3}
+      propertyPath: isLevel
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 685766912078421195, guid: 8896360afccaf7441a39cf7c2b778d5d, type: 3}
       propertyPath: m_Name
       value: AudioManager
@@ -3531,6 +3539,22 @@ PrefabInstance:
     - target: {fileID: 4843551869010961363, guid: eccc7e1e8e2728544a4c8601384ccbf0, type: 3}
       propertyPath: m_Name
       value: FPS Counter
+      objectReference: {fileID: 0}
+    - target: {fileID: 4843551870083648808, guid: eccc7e1e8e2728544a4c8601384ccbf0, type: 3}
+      propertyPath: m_Pivot.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4843551870083648808, guid: eccc7e1e8e2728544a4c8601384ccbf0, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4843551870083648808, guid: eccc7e1e8e2728544a4c8601384ccbf0, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4843551870083648808, guid: eccc7e1e8e2728544a4c8601384ccbf0, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 117.86548
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eccc7e1e8e2728544a4c8601384ccbf0, type: 3}

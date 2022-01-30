@@ -1,7 +1,19 @@
 fileFormatVersion: 2
 guid: 4fbac4d43e1cb5542ab9a3ab6475b59e
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 3886212694683342607
+    second: Skeleten walk_0
+  - first:
+      213: -6252796002825053419
+    second: Skeleten walk_1
+  - first:
+      213: 6194290661301781406
+    second: Skeleten walk_2
+  - first:
+      213: -3633484215079904375
+    second: Skeleten walk_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -113,7 +125,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Skeleten walk_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 320
+        width: 232
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f07d6341bd99ee530800000000000000
+      internalID: 3886212694683342607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleten walk_1
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 320
+        width: 232
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51b51a60a2b9939a0800000000000000
+      internalID: -6252796002825053419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleten walk_2
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 32
+        width: 232
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e938966a98a86f550800000000000000
+      internalID: 6194290661301781406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleten walk_3
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 32
+        width: 232
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98b5c2f7b55439dc0800000000000000
+      internalID: -3633484215079904375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

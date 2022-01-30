@@ -56,7 +56,7 @@ public class PlayerHealthController : MonoBehaviour
         {
             currentHealth -= damageToDeal;
 
-            if (damageToDeal <= 1)
+            for (int i = 0; i < damageToDeal; i++)
             {
                 theSR.color = new Color(1f, 1f, 1f, spriteAlphaValue - transparentPerHit);
                 spriteAlphaValue = theSR.color.a;

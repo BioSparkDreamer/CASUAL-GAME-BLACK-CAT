@@ -47,11 +47,17 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Spikes and Pickups
-    uniqueID: 2356272265
+  - name: Environment Art
+    uniqueID: 2023422247
     locked: 0
   - name: Ground Tilemap
     uniqueID: 4013834421
+    locked: 0
+  - name: Spikes and Pickups
+    uniqueID: 2356272265
+    locked: 0
+  - name: Enemies
+    uniqueID: 2338296221
     locked: 0
   - name: Player
     uniqueID: 2712465525
