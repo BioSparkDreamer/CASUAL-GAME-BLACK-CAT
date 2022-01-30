@@ -156,7 +156,7 @@ public class SettingsController : MonoBehaviour
     {
         musicText.text = (musicSlider.value + 80).ToString("F0");
         theMixer.SetFloat("musicVolume", musicSlider.value);
-        PlayerPrefs.SetFloat("sfxVolume", musicSlider.value);
+        PlayerPrefs.SetFloat("MusicVolume", musicSlider.value);
     }
 
     public void SfxVolume()

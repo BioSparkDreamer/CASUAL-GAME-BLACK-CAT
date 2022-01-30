@@ -58,6 +58,11 @@ public class UIController : MonoBehaviour
         staminaSlider.maxValue = PlayerController.instance.maxStamina;
         staminaSlider.value = PlayerController.instance.currentStamina;
 
+        if (PlayerController.instance.currentStamina >= PlayerController.instance.maxStamina)
+        {
+            PlayerController.instance.currentStamina = PlayerController.instance.maxStamina;
+        }
+
         staminaText.text = "Stamina: " + PlayerController.instance.currentStamina.ToString("F0");
 
     }
