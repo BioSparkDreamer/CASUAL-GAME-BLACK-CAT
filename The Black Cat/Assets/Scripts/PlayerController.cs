@@ -107,6 +107,14 @@ public class PlayerController : MonoBehaviour
                     moveSpeed = startSpeed;
                 }
 
+                if (Input.GetButtonDown("Heal") && GameManager.instance.currentSouls >= 50 &&
+                PlayerHealthController.instance.currentHealth < PlayerHealthController.instance.maxHealth)
+                {
+                    PlayerHealthController.instance.RestoreHealth(PlayerHealthController.instance.maxHealth);
+                    GameManager.instance.SubtractSouls();
+                    Debug.Log("Healing");
+                }
+
             }
 
             //Adding KnockBack to Player Depending on Direction

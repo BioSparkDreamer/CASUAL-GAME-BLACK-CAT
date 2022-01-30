@@ -11,6 +11,7 @@ public class PauseMenu : MonoBehaviour
     [Header("Pausing Variables")]
     public GameObject pauseMenu;
     public bool isPaused;
+    public bool canPause = true;
     public GameObject resumeButton;
 
     [Header("Loading to Main Menu")]
@@ -32,7 +33,7 @@ public class PauseMenu : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButtonDown("Pause"))
+        if (Input.GetButtonDown("Pause") && canPause)
         {
             ResumeandUnPause();
         }
