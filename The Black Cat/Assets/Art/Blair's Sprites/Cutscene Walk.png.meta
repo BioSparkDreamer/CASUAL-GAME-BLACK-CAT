@@ -1,49 +1,31 @@
 fileFormatVersion: 2
-guid: f18a23f943555b04e977d716a841ae91
+guid: 6d39f510bae80bb4082407ef069d6bc1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8912460289464512404
-    second: pickedMedia1_0
+      213: 4035959289877228764
+    second: Walk_0
   - first:
-      213: -767743283277086744
-    second: pickedMedia1_1
+      213: -982904232830982447
+    second: Walk_1
   - first:
-      213: -3545686714166893861
-    second: pickedMedia1_2
+      213: -350908408369970039
+    second: Walk_2
   - first:
-      213: -6280762998816547367
-    second: pickedMedia1_3
+      213: -5409570386352685021
+    second: Walk_3
   - first:
-      213: 8852412701533934787
-    second: pickedMedia1_4
+      213: 1553940418269799609
+    second: Walk_4
   - first:
-      213: -3443609820920127856
-    second: pickedMedia1_5
+      213: 2416434504916517810
+    second: Walk_5
   - first:
-      213: 592681540032122776
-    second: pickedMedia1_6
+      213: -6428935122508569504
+    second: Walk_6
   - first:
-      213: 680083356733668146
-    second: pickedMedia1_7
-  - first:
-      213: 841978440305428234
-    second: pickedMedia1_8
-  - first:
-      213: 8227996199148051306
-    second: pickedMedia1_9
-  - first:
-      213: 8093931529678161844
-    second: pickedMedia1_10
-  - first:
-      213: -2252307358976483798
-    second: pickedMedia1_11
-  - first:
-      213: 7988180262653671732
-    second: pickedMedia1_12
-  - first:
-      213: 7965372848732289957
-    second: pickedMedia1_13
+      213: 7144598999076838305
+    second: Walk_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -157,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pickedMedia1_0
+      name: Walk_0
       rect:
         serializedVersion: 2
-        x: 488
-        y: 1112
-        width: 32
-        height: 16
+        x: 71
+        y: 536
+        width: 106
+        height: 210
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +153,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49fae4cb96b6fab70800000000000000
-      internalID: 8912460289464512404
+      spriteID: cdce119379b920830800000000000000
+      internalID: 4035959289877228764
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pickedMedia1_1
+      name: Walk_1
       rect:
         serializedVersion: 2
-        x: 824
-        y: 1112
-        width: 40
-        height: 24
+        x: 327
+        y: 536
+        width: 107
+        height: 210
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8efb3913d8d6855f0800000000000000
-      internalID: -767743283277086744
+      spriteID: 1d6a1e1dec50c52f0800000000000000
+      internalID: -982904232830982447
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pickedMedia1_2
+      name: Walk_2
       rect:
         serializedVersion: 2
-        x: 1160
-        y: 1112
-        width: 40
-        height: 40
+        x: 584
+        y: 536
+        width: 105
+        height: 210
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,20 +195,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd2a24528b03bcec0800000000000000
-      internalID: -3545686714166893861
+      spriteID: 984096a69a2512bf0800000000000000
+      internalID: -350908408369970039
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pickedMedia1_3
+      name: Walk_3
       rect:
         serializedVersion: 2
-        x: 152
-        y: 776
-        width: 40
-        height: 64
+        x: 71
+        y: 279
+        width: 106
+        height: 210
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,20 +216,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9dd5f19545f36d8a0800000000000000
-      internalID: -6280762998816547367
+      spriteID: 320c9fd05685de4b0800000000000000
+      internalID: -5409570386352685021
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pickedMedia1_4
+      name: Walk_4
       rect:
         serializedVersion: 2
-        x: 488
-        y: 776
-        width: 64
-        height: 48
+        x: 327
+        y: 279
+        width: 107
+        height: 210
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -255,20 +237,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c4161033761ada70800000000000000
-      internalID: 8852412701533934787
+      spriteID: 9b4e719c394b09510800000000000000
+      internalID: 1553940418269799609
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pickedMedia1_5
+      name: Walk_5
       rect:
         serializedVersion: 2
-        x: 824
-        y: 776
-        width: 80
-        height: 32
+        x: 584
+        y: 279
+        width: 105
+        height: 210
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -276,20 +258,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09e5207ec17d530d0800000000000000
-      internalID: -3443609820920127856
+      spriteID: 2b3cb802166e88120800000000000000
+      internalID: 2416434504916517810
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pickedMedia1_6
+      name: Walk_6
       rect:
         serializedVersion: 2
-        x: 1144
-        y: 776
-        width: 96
-        height: 48
+        x: 71
+        y: 23
+        width: 106
+        height: 210
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -297,20 +279,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89fcb8278b0a93800800000000000000
-      internalID: 592681540032122776
+      spriteID: 06428da6195d7c6a0800000000000000
+      internalID: -6428935122508569504
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pickedMedia1_7
+      name: Walk_7
       rect:
         serializedVersion: 2
-        x: 136
-        y: 440
-        width: 96
-        height: 56
+        x: 326
+        y: 24
+        width: 107
+        height: 210
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -318,134 +300,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23bf3cfa534207900800000000000000
-      internalID: 680083356733668146
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pickedMedia1_8
-      rect:
-        serializedVersion: 2
-        x: 472
-        y: 440
-        width: 96
-        height: 64
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a0741f23eee4fab00800000000000000
-      internalID: 841978440305428234
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pickedMedia1_9
-      rect:
-        serializedVersion: 2
-        x: 808
-        y: 438
-        width: 96
-        height: 72
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a6bdb7703f6bf2270800000000000000
-      internalID: 8227996199148051306
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pickedMedia1_10
-      rect:
-        serializedVersion: 2
-        x: 1152
-        y: 440
-        width: 104
-        height: 112
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4b70dceb7db635070800000000000000
-      internalID: 8093931529678161844
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pickedMedia1_11
-      rect:
-        serializedVersion: 2
-        x: 142
-        y: 100
-        width: 104
-        height: 168
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a2e5537e3623eb0e0800000000000000
-      internalID: -2252307358976483798
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pickedMedia1_12
-      rect:
-        serializedVersion: 2
-        x: 472
-        y: 96
-        width: 120
-        height: 192
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 439324d20a7bbde60800000000000000
-      internalID: 7988180262653671732
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pickedMedia1_13
-      rect:
-        serializedVersion: 2
-        x: 816
-        y: 96
-        width: 104
-        height: 208
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5abba305760ba8e60800000000000000
-      internalID: 7965372848732289957
+      spriteID: 1ab169a9fe6b62360800000000000000
+      internalID: 7144598999076838305
       vertices: []
       indices: 
       edges: []
