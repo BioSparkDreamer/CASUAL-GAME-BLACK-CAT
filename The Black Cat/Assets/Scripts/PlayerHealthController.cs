@@ -55,6 +55,7 @@ public class PlayerHealthController : MonoBehaviour
         if (invincibleCounter <= 0)
         {
             currentHealth -= damageToDeal;
+            AudioManager.instance.PlaySFXAdjusted(4);
 
             for (int i = 0; i < damageToDeal; i++)
             {
@@ -65,6 +66,7 @@ public class PlayerHealthController : MonoBehaviour
             if (currentHealth <= 0)
             {
                 currentHealth = 0;
+                AudioManager.instance.PlaySFXAdjusted(3);
                 UIController.instance.GameOverScreen();
             }
 

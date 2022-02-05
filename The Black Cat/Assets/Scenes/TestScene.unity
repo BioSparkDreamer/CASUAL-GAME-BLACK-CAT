@@ -2075,6 +2075,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioManager
       objectReference: {fileID: 0}
+    - target: {fileID: 6925104688363730189, guid: 8896360afccaf7441a39cf7c2b778d5d, type: 3}
+      propertyPath: m_Volume
+      value: 0.8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8896360afccaf7441a39cf7c2b778d5d, type: 3}
 --- !u!1 &297748338
@@ -2571,6 +2575,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7577463547975959928, guid: d6f9c74ead5d557458bab5f1d6f62382, type: 3}
       propertyPath: health
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7577463547975959928, guid: d6f9c74ead5d557458bab5f1d6f62382, type: 3}
+      propertyPath: isMonster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7577463547975959928, guid: d6f9c74ead5d557458bab5f1d6f62382, type: 3}
@@ -4733,7 +4741,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.001
   far clip plane: 1000
   field of view: 60
   orthographic: 1
@@ -4761,7 +4769,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.63309, y: 1.0604105, z: -10}
+  m_LocalPosition: {x: -0.63309, y: 1.0604103, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1875269788}
@@ -4833,6 +4841,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7332177938599392805, guid: 01971306b56157e42abed44d76ae54a9, type: 3}
       propertyPath: health
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7332177938599392805, guid: 01971306b56157e42abed44d76ae54a9, type: 3}
+      propertyPath: isMonster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7332177938599392805, guid: 01971306b56157e42abed44d76ae54a9, type: 3}
@@ -5310,6 +5322,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4456263323295436684, guid: a0cf709e195f9864182834fce17d3c2a, type: 3}
+      propertyPath: isBat
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4456263323295436684, guid: a0cf709e195f9864182834fce17d3c2a, type: 3}
       propertyPath: soulsToAdd
       value: 5
       objectReference: {fileID: 0}
@@ -5345,6 +5361,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7577463547975959928, guid: d6f9c74ead5d557458bab5f1d6f62382, type: 3}
       propertyPath: health
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7577463547975959928, guid: d6f9c74ead5d557458bab5f1d6f62382, type: 3}
+      propertyPath: isMonster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7577463547975959928, guid: d6f9c74ead5d557458bab5f1d6f62382, type: 3}
@@ -6411,6 +6431,10 @@ PrefabInstance:
     - target: {fileID: 4456263322929316223, guid: a0cf709e195f9864182834fce17d3c2a, type: 3}
       propertyPath: m_LocalPosition.y
       value: -3.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 4456263323295436684, guid: a0cf709e195f9864182834fce17d3c2a, type: 3}
+      propertyPath: isBat
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4456263323295436684, guid: a0cf709e195f9864182834fce17d3c2a, type: 3}
       propertyPath: deathEffect
@@ -7558,6 +7582,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4456263323295436684, guid: a0cf709e195f9864182834fce17d3c2a, type: 3}
+      propertyPath: isBat
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4456263323295436684, guid: a0cf709e195f9864182834fce17d3c2a, type: 3}
       propertyPath: soulsToAdd
       value: 5
       objectReference: {fileID: 0}
@@ -8415,6 +8443,9 @@ MonoBehaviour:
   soulsToAdd: 5
   enemyObject: {fileID: 713047311}
   deathEffect: {fileID: 7267188875236473914, guid: f479112fde898d04e8b0467a1207551b, type: 3}
+  isMonster: 0
+  isSlime: 1
+  isBat: 0
 --- !u!114 &1068927204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8870,12 +8901,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ad980451443d70438faac0bc6c235a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TrackedObjectOffset: {x: 0, y: 0, z: 0}
+  m_TrackedObjectOffset: {x: 0.5, y: 0.3, z: 0}
   m_LookaheadTime: 0.5
-  m_LookaheadSmoothing: 4
+  m_LookaheadSmoothing: 5
   m_LookaheadIgnoreY: 1
-  m_XDamping: 1
-  m_YDamping: 1
+  m_XDamping: 3
+  m_YDamping: 3
   m_ZDamping: 1
   m_TargetMovementOnly: 1
   m_ScreenX: 0.5
@@ -8885,8 +8916,8 @@ MonoBehaviour:
   m_DeadZoneHeight: 0
   m_DeadZoneDepth: 0
   m_UnlimitedSoftZone: 0
-  m_SoftZoneWidth: 0.8
-  m_SoftZoneHeight: 0.8
+  m_SoftZoneWidth: 0.2
+  m_SoftZoneHeight: 0.2
   m_BiasX: 0
   m_BiasY: 0
   m_CenterOnActivate: 1
@@ -9431,6 +9462,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7332177938599392805, guid: 01971306b56157e42abed44d76ae54a9, type: 3}
       propertyPath: health
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7332177938599392805, guid: 01971306b56157e42abed44d76ae54a9, type: 3}
+      propertyPath: isMonster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7332177938599392805, guid: 01971306b56157e42abed44d76ae54a9, type: 3}
@@ -33441,7 +33476,6 @@ GameObject:
   - component: {fileID: 2106875844}
   - component: {fileID: 2106875847}
   - component: {fileID: 2106875846}
-  - component: {fileID: 2106875845}
   m_Layer: 0
   m_Name: CM vcam1
   m_TagString: Untagged
@@ -33457,25 +33491,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2106875843}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8, y: -1, z: -10}
+  m_LocalPosition: {x: -7.5, y: -0.7, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1087470514}
   m_Father: {fileID: 1955355501}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2106875845
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2106875843}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a8a05de0ac134f4f9d01bef6b9da077, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2106875846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33511,12 +33533,12 @@ MonoBehaviour:
   m_StreamingVersion: 20170927
   m_Priority: 10
   m_StandbyUpdate: 2
-  m_LookAt: {fileID: 1141782591}
+  m_LookAt: {fileID: 0}
   m_Follow: {fileID: 1141782591}
   m_Lens:
     FieldOfView: 60
     OrthographicSize: 6
-    NearClipPlane: 0.3
+    NearClipPlane: 0.001
     FarClipPlane: 1000
     Dutch: 0
     LensShift: {x: 0, y: 0}
@@ -35413,6 +35435,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3721568843202221803, guid: bc8b7df8436911049953213ec3ecf15b, type: 3}
+      propertyPath: theCM
+      value: 
+      objectReference: {fileID: 519420030}
+    - target: {fileID: 3721568843202221803, guid: bc8b7df8436911049953213ec3ecf15b, type: 3}
       propertyPath: maxSouls
       value: 50
       objectReference: {fileID: 0}
@@ -35479,6 +35505,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4456263323295436683, guid: a0cf709e195f9864182834fce17d3c2a, type: 3}
       propertyPath: canKnockBack
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4456263323295436684, guid: a0cf709e195f9864182834fce17d3c2a, type: 3}
+      propertyPath: isBat
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4456263323295436684, guid: a0cf709e195f9864182834fce17d3c2a, type: 3}
@@ -35654,6 +35684,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7332177938599392805, guid: 01971306b56157e42abed44d76ae54a9, type: 3}
+      propertyPath: isMonster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7332177938599392805, guid: 01971306b56157e42abed44d76ae54a9, type: 3}
       propertyPath: soulsToAdd
       value: 15
       objectReference: {fileID: 0}
@@ -35688,6 +35722,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7577463547975959928, guid: d6f9c74ead5d557458bab5f1d6f62382, type: 3}
       propertyPath: health
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7577463547975959928, guid: d6f9c74ead5d557458bab5f1d6f62382, type: 3}
+      propertyPath: isMonster
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7577463547975959928, guid: d6f9c74ead5d557458bab5f1d6f62382, type: 3}
@@ -35995,6 +36033,9 @@ MonoBehaviour:
   soulsToAdd: 5
   enemyObject: {fileID: 8143393019143275734}
   deathEffect: {fileID: 7267188875236473914, guid: f479112fde898d04e8b0467a1207551b, type: 3}
+  isMonster: 0
+  isSlime: 1
+  isBat: 0
 --- !u!58 &8143393019639511814
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -36086,6 +36127,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 554448246}
     m_Modifications:
+    - target: {fileID: 8908935166510350510, guid: ae63523f7c97a734f832b017518adca6, type: 3}
+      propertyPath: isSlime
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8908935166510350510, guid: ae63523f7c97a734f832b017518adca6, type: 3}
       propertyPath: deathEffect
       value: 

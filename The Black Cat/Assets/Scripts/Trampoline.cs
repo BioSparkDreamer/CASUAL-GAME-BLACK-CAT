@@ -37,6 +37,7 @@ public class Trampoline : MonoBehaviour
         {
             theSR.sprite = upSprite;
             stayUpCounter = stayUpTime;
+            AudioManager.instance.PlaySFXAdjusted(7);
 
             Rigidbody2D player = other.GetComponent<Rigidbody2D>();
             player.velocity = new Vector2(player.velocity.x, bounceForce);
