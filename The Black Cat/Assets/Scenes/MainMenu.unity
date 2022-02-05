@@ -2254,7 +2254,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efdd585bddd87e043922e7890bbf8fa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: TestScene
+  sceneToLoad: Cutscene
   buttons:
   - {fileID: 1098894993}
   - {fileID: 1318086479}
@@ -3160,6 +3160,10 @@ PrefabInstance:
       propertyPath: isLevel
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 685766912078421193, guid: 8896360afccaf7441a39cf7c2b778d5d, type: 3}
+      propertyPath: isCutScene
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 685766912078421195, guid: 8896360afccaf7441a39cf7c2b778d5d, type: 3}
       propertyPath: m_Name
       value: AudioManager
@@ -3219,7 +3223,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 26265159804143153, guid: ce8b7f705ab921149b5ba233e8880224, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: TestScene
+      value: Cutscene
       objectReference: {fileID: 0}
     - target: {fileID: 6506484288191950849, guid: ce8b7f705ab921149b5ba233e8880224, type: 3}
       propertyPath: m_Pivot.x
@@ -3421,6 +3425,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4125745578749481847, guid: 5020641159f462347aeb17f13feea651, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7136581714315455662, guid: 5020641159f462347aeb17f13feea651, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7136581714315455662, guid: 5020641159f462347aeb17f13feea651, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7136581714315455662, guid: 5020641159f462347aeb17f13feea651, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7136581714315455662, guid: 5020641159f462347aeb17f13feea651, type: 3}
+      propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
