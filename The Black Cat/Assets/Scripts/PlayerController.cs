@@ -81,6 +81,7 @@ public class PlayerController : MonoBehaviour
                 if (Input.GetButtonDown("Attack") && !isWallSliding && whipCounter <= 0)
                 {
                     anim.SetTrigger("Attack");
+                    AudioManager.instance.PlaySFXAdjusted(6);
                     whipCounter = timeBetweenWhips;
                 }
 

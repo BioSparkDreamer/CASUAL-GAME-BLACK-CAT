@@ -1550,6 +1550,10 @@ PrefabInstance:
       propertyPath: isLevel
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 685766912078421193, guid: 8896360afccaf7441a39cf7c2b778d5d, type: 3}
+      propertyPath: isCutScene
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 685766912078421195, guid: 8896360afccaf7441a39cf7c2b778d5d, type: 3}
       propertyPath: m_Name
       value: AudioManager
