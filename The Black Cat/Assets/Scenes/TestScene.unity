@@ -2601,6 +2601,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zombie Patroller Enemy (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7577463548597178442, guid: d6f9c74ead5d557458bab5f1d6f62382, type: 3}
+      propertyPath: m_Interpolate
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7577463548597178443, guid: d6f9c74ead5d557458bab5f1d6f62382, type: 3}
       propertyPath: moveSpeed
       value: 1.7
@@ -4791,6 +4795,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skeleton Patroller Enemy (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7332177937369096171, guid: 01971306b56157e42abed44d76ae54a9, type: 3}
+      propertyPath: m_Interpolate
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7332177937369096172, guid: 01971306b56157e42abed44d76ae54a9, type: 3}
       propertyPath: moveSpeed
       value: 2
@@ -5269,6 +5277,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 448154975}
     m_Modifications:
+    - target: {fileID: 4456263322258291881, guid: a0cf709e195f9864182834fce17d3c2a, type: 3}
+      propertyPath: m_Interpolate
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4456263322258291883, guid: a0cf709e195f9864182834fce17d3c2a, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -5386,6 +5398,10 @@ PrefabInstance:
     - target: {fileID: 7577463548597178440, guid: d6f9c74ead5d557458bab5f1d6f62382, type: 3}
       propertyPath: m_Name
       value: Zombie Patroller Enemy (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7577463548597178442, guid: d6f9c74ead5d557458bab5f1d6f62382, type: 3}
+      propertyPath: m_Interpolate
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7577463548597178443, guid: d6f9c74ead5d557458bab5f1d6f62382, type: 3}
       propertyPath: moveSpeed
@@ -6384,6 +6400,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 448154975}
     m_Modifications:
+    - target: {fileID: 4456263322258291881, guid: a0cf709e195f9864182834fce17d3c2a, type: 3}
+      propertyPath: m_Interpolate
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4456263322258291883, guid: a0cf709e195f9864182834fce17d3c2a, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -7529,6 +7549,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 448154975}
     m_Modifications:
+    - target: {fileID: 4456263322258291881, guid: a0cf709e195f9864182834fce17d3c2a, type: 3}
+      propertyPath: m_Interpolate
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4456263322258291883, guid: a0cf709e195f9864182834fce17d3c2a, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -9411,6 +9435,10 @@ PrefabInstance:
     - target: {fileID: 7332177937369096170, guid: 01971306b56157e42abed44d76ae54a9, type: 3}
       propertyPath: m_Name
       value: Skeleton Patroller Enemy (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7332177937369096171, guid: 01971306b56157e42abed44d76ae54a9, type: 3}
+      propertyPath: m_Interpolate
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7332177937369096172, guid: 01971306b56157e42abed44d76ae54a9, type: 3}
       propertyPath: moveSpeed
@@ -35459,6 +35487,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 448154975}
     m_Modifications:
+    - target: {fileID: 4456263322258291881, guid: a0cf709e195f9864182834fce17d3c2a, type: 3}
+      propertyPath: m_Interpolate
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4456263322258291883, guid: a0cf709e195f9864182834fce17d3c2a, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -35635,6 +35667,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skeleton Patroller Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 7332177937369096171, guid: 01971306b56157e42abed44d76ae54a9, type: 3}
+      propertyPath: m_Interpolate
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7332177937369096172, guid: 01971306b56157e42abed44d76ae54a9, type: 3}
       propertyPath: moveSpeed
       value: 2.5
@@ -35743,6 +35779,10 @@ PrefabInstance:
     - target: {fileID: 7577463548597178440, guid: d6f9c74ead5d557458bab5f1d6f62382, type: 3}
       propertyPath: m_Name
       value: Zombie Patroller Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 7577463548597178442, guid: d6f9c74ead5d557458bab5f1d6f62382, type: 3}
+      propertyPath: m_Interpolate
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7577463548597178443, guid: d6f9c74ead5d557458bab5f1d6f62382, type: 3}
       propertyPath: moveSpeed
