@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class CutsceneController : MonoBehaviour
 {
+    public static CutsceneController instance;
+
     [Header("Object Variables")]
     public Animator catAnimator;
     public SpriteRenderer theCatSR;
@@ -20,14 +23,27 @@ public class CutsceneController : MonoBehaviour
     public bool cutScene2HasEnded;
     public float waitToRun;
 
+    [Header("Cutscene Dialogue Variables")]
+    public bool dialogueHasStarted;
+    public float waitToStartDialogue;
+    public CutsceneDialogue cutsceneDialogue;
+
     [Header("Cutscene Part 3 Variables")]
     public bool cutScene3HasEnded;
     public Transform movePoint2;
     public float waitToFade;
 
+    void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+    }
+
     void Start()
     {
-
+        cutsceneDialogue = FindObjectOfType<CutsceneDialogue>();
     }
 
     void Update()
@@ -49,13 +65,23 @@ public class CutsceneController : MonoBehaviour
         if (cutScene1HasEnded == true && !cutScene2HasEnded)
         {
             playerAnimator.SetBool("Rise", true);
-            waitToRun -= Time.deltaTime;
+            waitToStartDialogue -= Time.deltaTime;
 
-            if (waitToRun <= 0)
+            if (waitToStartDialogue <= 0)
             {
-                cutScene2HasEnded = true;
+                playerAnimator.SetBool("Idle", true);
+                dialogueHasStarted = true;
             }
 
+            if (cutsceneDialogue.finishedDialogue)
+            {
+                waitToRun -= Time.deltaTime;
+
+                if (waitToRun <= 0)
+                {
+                    cutScene2HasEnded = true;
+                }
+            }
         }
 
         if (cutScene2HasEnded == true && !cutScene3HasEnded)

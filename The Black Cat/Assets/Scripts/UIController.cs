@@ -70,15 +70,18 @@ public class UIController : MonoBehaviour
             }
         }
 
-        if (timerInLevel > 0)
+        if (!GameManager.instance.levelIsEnding)
         {
-            timerInLevel -= Time.deltaTime;
-            timerText.text = "Time Left " + timerInLevel.ToString("F0");
-        }
-        else if (timerInLevel <= 0)
-        {
-            timerText.text = "Out of Time!";
-            GameOverScreen();
+            if (timerInLevel > 0)
+            {
+                timerInLevel -= Time.deltaTime;
+                timerText.text = "Time Left " + timerInLevel.ToString("F0");
+            }
+            else if (timerInLevel <= 0)
+            {
+                timerText.text = "Out of Time!";
+                GameOverScreen();
+            }
         }
     }
 

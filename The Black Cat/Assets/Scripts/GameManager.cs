@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
 
     [Header("Loading Next Level")]
     public string nextLevel;
+    public bool levelIsEnding;
 
     [Header("Respawning")]
     public float waitToRespawn;
@@ -77,8 +78,6 @@ public class GameManager : MonoBehaviour
     public void Respawn()
     {
         StartCoroutine(RespawnCO());
-        //PlayerController.instance.transform.position = spawnPoint;
-
     }
 
     private IEnumerator RespawnCO()
@@ -86,7 +85,6 @@ public class GameManager : MonoBehaviour
         PlayerHealthController.instance.theSR.enabled = false;
         PauseMenu.instance.canPause = false;
         UIController.instance.isDead = true;
-        PlayerHealthController.instance.TakeDamage(1);
         theCM.enabled = false;
 
         yield return new WaitForSeconds(waitToRespawn - (1 / UIController.instance.fadeSpeed));
@@ -120,6 +118,7 @@ public class GameManager : MonoBehaviour
     {
         PauseMenu.instance.canPause = false;
         UIController.instance.isDead = true;
+        levelIsEnding = true;
         PlayerController.instance.theRB.velocity = new Vector2(5f, PlayerController.instance.theRB.velocity.y);
 
         yield return new WaitForSeconds(2f);
