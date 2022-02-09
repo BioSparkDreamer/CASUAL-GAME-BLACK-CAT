@@ -46,6 +46,10 @@ public class PlayerController : MonoBehaviour
     public float timeBetweenWhips;
     private float whipCounter;
 
+    [Header("Soul Counter Variables")]
+    public float waitToMove;
+    private float waitCounter;
+
     void Awake()
     {
         if (instance == null)
@@ -71,49 +75,58 @@ public class PlayerController : MonoBehaviour
         {
             if (knockBackCounter <= 0)
             {
-                //Detect Input for Horizontal Movement
-                movX = Input.GetAxisRaw("Horizontal");
-
-                //Function for Checking if Player is Grounded
-                GroundCheck();
-
-                //Whip Attack
-                if (Input.GetButtonDown("Attack") && !isWallSliding && whipCounter <= 0)
+                if (waitCounter <= 0)
                 {
-                    anim.SetTrigger("Attack");
-                    AudioManager.instance.PlaySFXAdjusted(6);
-                    whipCounter = timeBetweenWhips;
-                }
+                    //Detect Input for Horizontal Movement
+                    movX = Input.GetAxisRaw("Horizontal");
 
-                WhipCooldown();
+                    //Function for Checking if Player is Grounded
+                    GroundCheck();
 
-                //Input for player to jump
-                if (Input.GetButtonDown("Jump") && isGrounded || isWallSliding && Input.GetButtonDown("Jump"))
-                {
-                    Jump();
-                }
+                    //Whip Attack
+                    if (Input.GetButtonDown("Attack") && !isWallSliding && whipCounter <= 0)
+                    {
+                        anim.SetTrigger("Attack");
+                        AudioManager.instance.PlaySFXAdjusted(6);
+                        whipCounter = timeBetweenWhips;
+                    }
 
-                //WallJump 
-                WallJump();
+                    WhipCooldown();
 
-                //Input for player to sprint
-                if ((Input.GetButton("Sprint") || Input.GetAxis("Sprint") > 0.05f) && movX != 0 && currentStamina > staminaCost)
-                {
-                    isSprinting = true;
-                    moveSpeed = sprintSpeed;
+                    //Input for player to jump
+                    if (Input.GetButtonDown("Jump") && isGrounded || isWallSliding && Input.GetButtonDown("Jump"))
+                    {
+                        Jump();
+                    }
+
+                    //WallJump 
+                    WallJump();
+
+                    //Input for player to sprint
+                    if ((Input.GetButton("Sprint") || Input.GetAxis("Sprint") > 0.05f) && movX != 0 && currentStamina > staminaCost)
+                    {
+                        isSprinting = true;
+                        moveSpeed = sprintSpeed;
+                    }
+                    else
+                    {
+                        isSprinting = false;
+                        moveSpeed = startSpeed;
+                    }
+
+                    if (Input.GetButtonDown("Heal") && GameManager.instance.currentSouls >= 50 &&
+                    PlayerHealthController.instance.currentHealth < PlayerHealthController.instance.maxHealth)
+                    {
+                        PlayerHealthController.instance.RestoreHealth(PlayerHealthController.instance.maxHealth);
+                        GameManager.instance.SubtractSouls();
+                        waitCounter = waitToMove;
+                        Debug.Log("Healing");
+                    }
                 }
                 else
                 {
-                    isSprinting = false;
-                    moveSpeed = startSpeed;
-                }
-
-                if (Input.GetButtonDown("Heal") && GameManager.instance.currentSouls >= 50 &&
-                PlayerHealthController.instance.currentHealth < PlayerHealthController.instance.maxHealth)
-                {
-                    PlayerHealthController.instance.RestoreHealth(PlayerHealthController.instance.maxHealth);
-                    GameManager.instance.SubtractSouls();
-                    Debug.Log("Healing");
+                    waitCounter -= Time.deltaTime;
+                    theRB.velocity = Vector2.zero;
                 }
 
             }
@@ -137,17 +150,24 @@ public class PlayerController : MonoBehaviour
     {
         if (knockBackCounter <= 0)
         {
-            theRB.velocity = new Vector2(movX * moveSpeed, theRB.velocity.y);
-            Flip();
-
-            if (isSprinting)
+            if (waitCounter <= 0)
             {
-                UseStamina();
+                theRB.velocity = new Vector2(movX * moveSpeed, theRB.velocity.y);
+                Flip();
+
+                if (isSprinting)
+                {
+                    UseStamina();
+                }
+
+                if (isWallSliding)
+                {
+                    theRB.velocity = new Vector2(theRB.velocity.x, Mathf.Clamp(theRB.velocity.y, wallJumpSpeed, float.MaxValue));
+                }
             }
-
-            if (isWallSliding)
+            else
             {
-                theRB.velocity = new Vector2(theRB.velocity.x, Mathf.Clamp(theRB.velocity.y, wallJumpSpeed, float.MaxValue));
+                waitCounter -= Time.deltaTime;
             }
         }
     }

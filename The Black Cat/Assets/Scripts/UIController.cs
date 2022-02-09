@@ -76,10 +76,15 @@ public class UIController : MonoBehaviour
             {
                 timerInLevel -= Time.deltaTime;
                 timerText.text = "Time Left " + timerInLevel.ToString("F0");
+                if (timerInLevel <= 30)
+                {
+                    timerText.color = Color.red;
+                }
             }
             else if (timerInLevel <= 0)
             {
                 timerText.text = "Out of Time!";
+                timerText.color = Color.red;
                 GameOverScreen();
             }
         }

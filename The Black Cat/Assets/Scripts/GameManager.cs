@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     [Header("Soul Collecing System Variables")]
     public int maxSouls = 50;
     public int currentSouls;
+    public GameObject soulParticleEffect;
 
     [Header("Loading Next Level")]
     public string nextLevel;
@@ -71,6 +72,8 @@ public class GameManager : MonoBehaviour
     public void SubtractSouls()
     {
         currentSouls = 0;
+        AudioManager.instance.PlaySFXAdjusted(10);
+        Instantiate(soulParticleEffect, PlayerController.instance.transform.position, Quaternion.identity);
 
         UIController.instance.UpdateSoulUI();
     }
