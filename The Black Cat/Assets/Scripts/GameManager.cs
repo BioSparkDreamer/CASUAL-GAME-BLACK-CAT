@@ -122,6 +122,7 @@ public class GameManager : MonoBehaviour
         PauseMenu.instance.canPause = false;
         UIController.instance.isDead = true;
         levelIsEnding = true;
+        UIController.instance.timerText.gameObject.SetActive(false);
         PlayerController.instance.theRB.velocity = new Vector2(5f, PlayerController.instance.theRB.velocity.y);
 
         yield return new WaitForSeconds(2f);
