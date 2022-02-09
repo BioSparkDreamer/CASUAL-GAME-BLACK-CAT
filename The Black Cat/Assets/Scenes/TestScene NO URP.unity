@@ -11800,6 +11800,7 @@ MonoBehaviour:
   wallJumpSpeed: 0.3
   wallDistance: 0.5
   timeBetweenWhips: 0.3
+  waitToMove: 0
 --- !u!4 &1141782591
 Transform:
   m_ObjectHideFlags: 0
