@@ -72363,7 +72363,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3721568843202221803, guid: bc8b7df8436911049953213ec3ecf15b, type: 3}
       propertyPath: currentSouls
-      value: 45
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3721568843202221803, guid: bc8b7df8436911049953213ec3ecf15b, type: 3}
       propertyPath: soulParticleEffect

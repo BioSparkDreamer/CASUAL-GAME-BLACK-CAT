@@ -33,6 +33,6 @@ public class FadeScreen : MonoBehaviour
     public IEnumerator FadeOutCO()
     {
         yield return new WaitForSeconds(1.5f);
-        SceneManager.LoadScene(levelToLoad);
+        FindObjectOfType<LoadingScreen>().LoadScene(levelToLoad);
     }
 }
