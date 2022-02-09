@@ -18,7 +18,12 @@ public class Pit : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            GameManager.instance.Respawn();
+            PlayerHealthController.instance.TakeDamage(1);
+
+            if (PlayerHealthController.instance.currentHealth > 0)
+            {
+                GameManager.instance.Respawn();
+            }
         }
     }
 }
