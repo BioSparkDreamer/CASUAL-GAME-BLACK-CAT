@@ -125,7 +125,6 @@ public class UIController : MonoBehaviour
     {
         isDead = true;
         PauseMenu.instance.canPause = false;
-        AudioManager.instance.StopLevelMusic();
         StartCoroutine(ShowGameOverScreenCO());
 
     }
@@ -133,6 +132,7 @@ public class UIController : MonoBehaviour
     public IEnumerator ShowGameOverScreenCO()
     {
         yield return new WaitForSeconds(0.8f);
+        AudioManager.instance.StopLevelMusic();
         gameOverScreen.SetActive(true);
         EventSystem.current.SetSelectedGameObject(null);
         EventSystem.current.SetSelectedGameObject(restartButton);
